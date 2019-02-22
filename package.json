@@ -12,7 +12,7 @@
   ],
   "main": "index.js",
   "scripts": {
-    "test": "jest --coverage",
+    "test": "npm run build && jest --coverage",
     "lint": "eslint src/index.js",
     "build": "babel src/index.js --out-file index.js",
     "prepare": "npm run lint && npm run build"
@@ -43,14 +43,6 @@
     "jest": "^24.1.0"
   },
   "jest": {
-    "coverageThreshold": {
-      "global": {
-        "branches": 100,
-        "functions": 100,
-        "lines": 100,
-        "statements": 100
-      }
-    },
     "testEnvironment": "node",
     "testRegex": "./test/index.js$"
   },

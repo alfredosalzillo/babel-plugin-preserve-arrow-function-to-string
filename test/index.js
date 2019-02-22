@@ -2,7 +2,7 @@ import { transform } from '@babel/core';
 
 const conf = {
   presets: [['@babel/preset-env']],
-  plugins: ['./src/index.js'],
+  plugins: ['./index.js'],
 };
 describe('babel-plugin-preserve-arrow-function-to-string', () => {
   it('should redeclare arrow toString', () => {

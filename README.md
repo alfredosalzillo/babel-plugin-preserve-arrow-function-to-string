@@ -1,4 +1,4 @@
-#babel-plugin-preserve-arrow-function-to-string
+# babel-plugin-preserve-arrow-function-to-string
 
 [![Build Status](https://travis-ci.org/alfredosalzillo/babel-plugin-preserve-arrow-function-to-string.svg?branch=master)](https://travis-ci.org/alfredosalzillo/babel-plugin-preserve-arrow-function-to-string)
 

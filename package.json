@@ -10,11 +10,11 @@
     "es5",
     "preserve"
   ],
-  "main": "dist/index.js",
+  "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --coverage",
     "lint": "eslint src/index.js",
-    "build": "babel src/index.js --out-file dist/index.js",
+    "build": "babel src/index.js --out-file index.js",
     "prepare": "npm run lint && npm run build"
   },
   "repository": {
@@ -31,6 +31,7 @@
     "@babel/helper-plugin-utils": "^7.0.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.2.3",
     "@babel/core": "^7.3.3",
     "@babel/helper-plugin-test-runner": "^7.1.0",
     "@babel/preset-env": "^7.3.1",

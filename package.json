@@ -1,0 +1,61 @@
+{
+  "name": "babel-plugin-preserve-arrow-function-to-string",
+  "version": "0.0.1",
+  "description": "A babel plugin to preserve arrow function toString. Useful to use with 'z' pattern matching package.",
+  "keywords": [
+    "babel",
+    "babel-plugin",
+    "arrow function",
+    "es6",
+    "es5",
+    "preserve"
+  ],
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint src/index.js",
+    "build": "babel src/index.js --out-file dist/index.js",
+    "prepare": "npm run lint && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alfredosalzillo/babel-plugin-preserve-arrow-function-to-string.git"
+  },
+  "author": "alfredo salzillo <alfredo.salzillo@virgilio.it>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alfredosalzillo/babel-plugin-preserve-arrow-function-to-string/issues"
+  },
+  "homepage": "https://github.com/alfredosalzillo/babel-plugin-preserve-arrow-function-to-string#readme",
+  "dependencies": {
+    "@babel/helper-plugin-utils": "^7.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.3",
+    "@babel/helper-plugin-test-runner": "^7.1.0",
+    "@babel/preset-env": "^7.3.1",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.14.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jest": "^22.3.0",
+    "jest": "^24.1.0"
+  },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    },
+    "testEnvironment": "node",
+    "testRegex": "./test/index.js$"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  }
+}
